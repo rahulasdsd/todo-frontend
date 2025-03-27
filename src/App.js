@@ -13,7 +13,7 @@ function App() {
 
   const fetchTodos = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/todos');
+      const res = await axios.get('https://todo-list-backend-8bkw.onrender.com/api/todos');
       setTodos(res.data);
     } catch (err) {
       console.error(err);
